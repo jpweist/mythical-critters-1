@@ -1,5 +1,5 @@
 class Vampire {
-  constructor(name, pet, thirsty) {
+  constructor(name, pet) {
     this.name = name;
     if (pet === undefined) {
       this.pet = 'bat';
@@ -7,20 +7,17 @@ class Vampire {
       this.pet = pet;
 
     }
-    this.thirsty = thirsty;
+    this.thirsty = true;
 
     }
     drink()  {
-      if (this.thirsty === !true) {
-        return true;
-      } else {
-        return false;
-      }
-
+      this.thirsty = false;
     }
-  }
+}
+
 module.exports = Vampire;
 // 1. read the test
 // 2. ask yourself if its going to fail and why
 // 3. run the test
 // 4. make it pass
+// .only run one test
