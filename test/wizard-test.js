@@ -22,7 +22,7 @@ describe('Wizard', function() {
     assert.equal(wizard.bearded, false)
   });
 
-  it.skip('should have root powers', function() {
+  it.only('should have root powers', function() {
     var wizard = new Wizard({name: 'Jhun', bearded: false});
     assert.equal(wizard.incantation('chown lumos'), 'CHOWN LUMOS');
   });
@@ -32,20 +32,25 @@ describe('Wizard', function() {
     assert.equal(wizard.incantation('Expecto Patronum'), 'EXPECTO PATRONUM');
   });
 
-  it.skip('should start rested', function() {
+  it.only('should start rested', function() {
     // create wizard
+    var wizard = new Wizard({name: "John Adams", bearded: true})
     // assert isRested returns true
+    assert.equal(wizard.isRested, true);
   });
 
-  it.skip('should be able to cast spells', function() {
+  it.only('should be able to cast spells', function() {
     // create wizard
     // assert wizard.cast() returns 'MAGIC BULLET'
   });
 
-  it.skip('should only be able to cast 3 spells', function() {
+  it.only('should only be able to cast 3 spells', function() {
     // create wizard
+    var wizard = new Wizard({name: "John Adams", bearded: true})
     // assert isRested is true
+    assert.equal(wizard.isRested, true);
     // cast()
+    assert.equal(wizard.cast(), 'MAGIC BULLET');
     // assert isRested is true
     // cast()
     // assert isRested is true
