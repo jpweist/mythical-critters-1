@@ -3,37 +3,37 @@ var Pirate = require('../exercises/pirate');
 
 describe('Pirate', function() {
 
-  it.skip('should be a function', function() {
+  it.only('should be a function', function() {
     assert.isFunction(Pirate);
   });
 
-  it.skip('should instantiate our good friend, Pirate', function() {
+  it.only('should instantiate our good friend, Pirate', function() {
     var pirate = new Pirate();
     assert.isObject(pirate);
   });
 
-  it.skip('should have a name', function() {
+  it.only('should have a name', function() {
     var pirate = new Pirate('Blackbeard');
     assert.equal(pirate.name, 'Blackbeard');
   });
 
-  it.skip('should be a scallywag by default', function() {
+  it.only('should be a scallywag by default', function() {
     var pirate = new Pirate('JeffBeard');
     assert.equal(pirate.name, 'JeffBeard');
     assert.equal(pirate.job, 'Scallywag');
   });
 
-  it.skip('should be a cook if passed into argument', function() {
+  it.only('should be a cook if passed into argument', function() {
     var pirate = new Pirate('HoraceBeard', 'cook');
     assert.equal(pirate.job, 'cook');
   });
 
-  it.skip('should not be cursed by default', function() {
+  it.only('should not be cursed by default', function() {
     var pirate = new Pirate('SteveBeard', 'cook');
     assert.equal(pirate.cursed, false);
   });
 
-  it.skip('should become cursed after 3 heinous acts', function() {
+  it.only('should become cursed after 3 heinous acts', function() {
     var pirate = new Pirate('JoshBeard', 'cook');
 
     assert.equal(pirate.cursed, false);
