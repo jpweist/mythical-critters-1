@@ -50,7 +50,6 @@ describe('Wizard', function() {
     // assert isRested is true
     assert.equal(wizard.isRested, true);
     // cast()
-    assert.equal(wizard.cast(), 'MAGIC BULLET');
     // assert isRested is true
     // cast()
     // assert isRested is true
