@@ -39,12 +39,12 @@ Un-skip each test, one at a time in order, so you can concentrate on making one 
 
 ### Critter Order
 
-* `unicorn` [x]
-* `vampire` [x]
-* `dragon`  [x]
-* `hobbit`  [x]
-* `pirate`  [x]
-* `wizard`  [x]
+* `unicorn`
+* `vampire`
+* `dragon`
+* `hobbit`
+* `pirate`
+* `wizard`
 * `medusa`
 * `werewolf`
 * `centaur`
