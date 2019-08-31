@@ -4,7 +4,7 @@ var Victim = require('../exercises/victim');
 
 describe('Werewolf', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Werewolf);
   });
 

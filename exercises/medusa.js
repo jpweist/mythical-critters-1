@@ -4,12 +4,15 @@ class Medusa {
     this.statues = [];
     this.stare = victim;
   }
+  if (this.statues.length > 2) {
+    this.statues.shift(victim);
+  }
 
 
 }
 
 class Person {
-  constructor(){
+  constructor(victim){
     this.victim = [];
     console.log(victim)
   }
@@ -19,3 +22,4 @@ class Person {
 }
 
 module.exports = Medusa;
+module.exports = Person;
