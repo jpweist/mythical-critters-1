@@ -9,20 +9,21 @@ class Wizard {
     }
       // this.bearded = this.bearded === undefined;
     this.isRested = true;
+    this.castCount = 0;
 
   }
   incantation(phrase) {
+     this.castCount++;
+     if (this.castCount > 2) {
+       this.isRested = false;
+     }
      return phrase.toUpperCase();
   }
-  cast() {
-    this.castCount = 0;
-    if (this.castCount > 1){
-      this.castCount++;
 
-      console.log(castCount);
+  cast() {
+    if (this.castCount < 2){
       return 'MAGIC BULLET'
-    } else {
-      this.isRested = false;
+    } else  {
       return 'I SHALL NOT CAST!'
     }
 
