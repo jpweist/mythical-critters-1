@@ -1,13 +1,15 @@
 class Medusa {
-  constructor(name, victim) {
+  constructor(name, statues) {
     this.name = name;
     this.statues = [];
     this.stare = victim;
-  }
-  if (this.statues.length > 2) {
-    this.statues.shift(victim);
-  }
+      // if (this.statues[i] > this.statues[2]) {
+      //   this.status.shift(victim);
+      //   console.log(this.statues);
+      //   }
+      // }
 
+  }
 
 }
 
