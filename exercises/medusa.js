@@ -2,26 +2,20 @@ class Medusa {
   constructor(name, statues) {
     this.name = name;
     this.statues = [];
-    this.stare = victim;
-      // if (this.statues[i] > this.statues[2]) {
-      //   this.status.shift(victim);
-      //   console.log(this.statues);
-      //   }
-      // }
+    this.stoned = false;
 
-  }
+      }
+    stare(victim) {
+      if (this.statues.length < 3) {
+        this.statues.push(victim);
+      } else {
+        this.stoned = false;
 
-}
-
-class Person {
-  constructor(victim){
-    this.victim = [];
-    console.log(victim)
-  }
-
-
+      }
+    }
 
 }
+
+
 
 module.exports = Medusa;
-module.exports = Person;
