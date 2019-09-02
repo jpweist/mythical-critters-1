@@ -4,7 +4,7 @@ var Victim = require('../exercises/victim');
 
 describe('Werewolf', function() {
 
-  it('should be a function', function() {
+  it.skip('should be a function', function() {
     assert.isFunction(Werewolf);
   });
 
@@ -59,42 +59,62 @@ describe('Werewolf', function() {
   });
 
   it.skip('should start off not hungry', function() {
-    // your code here
+      // your code here
+      var werewolf = new Werewolf('Steve');
+
+      assert.equal(werewolf.hungry, false);
   });
 
   it.skip('should become hungry after changing into werewolf form', function() {
     // your code here
+    var werewolf = new Werewolf('Eddie');
+    werewolf.change();
+    assert.equal(werewolf.hungry, true)
   });
 
   it.skip('should be able to eat(victim) once hungry', function() {
     // your code here
+    var werewolf = new Werewolf('Joe');
+    werewolf.change();
+    werewolf.eat();
+    assert.equal(werewolf.victim, true);
   });
 
   it.skip('should not be hungry after changing back to human form', function() {
     // your code here
+    var werewolf = new Werewolf('Becky');
+    werewolf.change();
+    werewolf.change();
+    assert.equal(werewolf.hungry, false);
   });
 
   it.skip('should change back to human form after eating', function() {
     // your code here
+    var werewolf = new Werewolf('Steve');
+    werewolf.change();
+    werewolf.eat();
+    assert.equal(werewolf.human, true);
   });
 
   it.skip('should not be able to consume victim in human form', function() {
     // your code here
+    var werewolf = new Werewolf('Steve');
+    assert.equal(werewolf.victim, false);
   });
 });
 
 describe('Victim', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Victim);
   });
 
-  it.skip('should instantiate our good friend, Victim', function() {
+  it('should instantiate our good friend, Victim', function() {
     var victim = new Victim();
     assert.isObject(victim);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var victim = new Victim('Jorge');
     assert.equal(victim.name, 'Jorge');
   });
