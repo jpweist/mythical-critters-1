@@ -10,8 +10,9 @@ class Centaur {
   shoot() {
     if (this.standing === true && this.layingDown === false && this.runShoot < 3) {
         this.runShoot++;
+        console.log(this.runShoot);
         return 'Twang!!!';
-      } else {
+      } if (this.runShoot === 3) {
         this.cranky = true;
         return 'NO!';
     }
@@ -19,8 +20,9 @@ class Centaur {
   run() {
     if (this.standing === true && this.layingDown === false && this.runShoot < 3) {
         this.runShoot++;
+        console.log(this.runShoot);
         return 'Clop clop clop clop!!!';
-      } else {
+      } if (this.runShoot === 3) {
         this.cranky = true;
         return 'NO!';
     }
