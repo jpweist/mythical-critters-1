@@ -9,18 +9,16 @@ class Centaur {
   }
   shoot() {
     if (this.standing === true && this.layingDown === false && this.runShoot < 3) {
-      this.runShoot++;
+        this.runShoot++;
         return 'Twang!!!';
       } else {
         this.cranky = true;
         return 'NO!';
     }
-
-
   }
   run() {
     if (this.standing === true && this.layingDown === false && this.runShoot < 3) {
-      this.runShoot++;
+        this.runShoot++;
         return 'Clop clop clop clop!!!';
       } else {
         this.cranky = true;
@@ -28,10 +26,10 @@ class Centaur {
     }
   }
 
-
   sleep() {
     return 'NO!';
   }
+
   layDown() {
     this.standing = false;
     this.layingDown = true;

@@ -1,10 +1,10 @@
 class Person {
-  constructor(name) {
+  constructor(name, victim, stoned) {
     this.name = name;
+    this.victim = victim;
     this.stoned = false;
   }
-  stare(victim) {
-    this.stoned = true;
-  }
+
 }
+
 module.exports = Person;

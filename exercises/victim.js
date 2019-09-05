@@ -1,10 +1,13 @@
 class Victim {
-  constructor(name) {
+  constructor(name, alive) {
     this.name = name;
     this.alive = true;
   }
   eat() {
-    this.alive = false;
+    victim.alive = false;
+    console.log(this.alive);
+
+
   }
 
 };
