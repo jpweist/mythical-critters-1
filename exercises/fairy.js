@@ -1,9 +1,9 @@
 class Fairy {
-  constructor() {
+  constructor(firstInfant, secondInfant) {
     this.name = 'Holly';
     this.dust = 10;
     this.clothes = { dresses: ['Iris'] };
-    this.disposition = 'Good natured'
+    this.disposition = 'Good natured';
   }
   receiveBelief() {
     this.dust++;
@@ -20,22 +20,28 @@ class Fairy {
   }
   provoke(object) {
     this.disposition = 'Vengeful';
-    var firstInfant = { };
-    var secondInfant = { };
-    var newFirstInfant = { }
-    firstInfant = object;
-    secondInfant = object;
-    newFirstInfant = object;
-
   }
   replaceInfant(object) {
-    console.log(this.disposition);
     if (this.disposition === 'Vengeful') {
-    object.disposition = 'Malicious';
-    console.log(object.disposition);
+      firstInfant.disposition = 'Malicious';
+      console.log(firstInfant);
   }
     }
 
 }
+ class firstInfant {
+   constructor(object) {
+     this.name = object.name;
+     this.eyes = object.eyes;
+     this.disposition = object.disposition;
+   }
+ }
 
+ class secondInfant {
+   constructor(object) {
+     this.name = object.name;
+     this.eyes = object.eyes;
+     this.disposition = object.disposition;
+   }
+ }
 module.exports = Fairy;
